@@ -1,0 +1,17 @@
+{
+    "Users": [
+        {
+            "id":1,
+            "name":"Kamal Swami",
+            "email":"kswami848@gmail.com",
+            "username":"kamal7643",
+            "password":"12345"
+        },{
+            "id":2,
+            "name":"Dheeraj Sharma",
+            "email":"something@gmail.com",
+            "username":"dheeraj",
+            "password":"12345, "
+        }
+    ]
+}

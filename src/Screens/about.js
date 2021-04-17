@@ -1,11 +1,16 @@
 import React from 'react';
-
+import {useHistory} from 'react-router-dom';
 
 function About(){
+    const history = useHistory();
+    function rd(){
+        history.push("/");
+    }
     return(
-        <di>
+        <div>
             About page
-        </di>
+            <button onClick={rd}>home</button>
+        </div>
     );
 }
 
