@@ -1,22 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import LandingPage from './Screens/landingPage';
-import About from './Screens/about';
-import IndividualSignup from './Screens/individualSignUp';
-import IndividualLogin from './Screens/individualLogin';
-import IndividualProfile from './Screens/individualProfile';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
+
+// screens 
+import {About, LandingPage, Ranks, Participate, Performance, Support, Admin} from './Screens';
+import ExtraLandingPage from './Screens/extralandingpage';
+
 
 ReactDOM.render(
   <React.StrictMode>
       <Router>
-          <Route path="/" exact component={LandingPage}></Route>
-          <Route path="/individual-login" exact component={IndividualLogin}></Route>
-          <Route path="/individual-profile" exact component={IndividualProfile}></Route>
-          <Route path="/individual-signup" exact component={IndividualSignup}></Route>
+          <Route path="/" component={LandingPage}></Route>
+          <Route path="/" exact component={ExtraLandingPage}></Route>
+          <Route path="/ranks" exact component={Ranks}></Route>
+          <Route path="/participate" exact component={Participate}></Route>
+          <Route path="/performance" exact component={Performance}></Route>
+          <Route path="/support" exact component={Support}></Route>
           <Route path="/about" exact component={About}></Route>
+          <Route path="/admin" exact component={Admin}></Route>
       </Router>
   </React.StrictMode>,
   document.getElementById('root')

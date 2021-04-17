@@ -1,17 +1,17 @@
 import React from 'react';
 import {useHistory} from 'react-router-dom';
 
-function LandingPage(){
+function Ranks(){
     const history = useHistory();
     function rd(){
         history.push("/");
     }
     return(
         <div>
-            LandingPage page
+            Ranks page
             <button onClick={rd}>home</button>
         </div>
     );
 }
 
-export default LandingPage;
+export default Ranks;
