@@ -1,15 +1,11 @@
 import React from 'react';
-import {useHistory} from 'react-router-dom';
+import './css/landingpagebody.css';
 
 function ExtraLandingPage(){
-    const history = useHistory();
-    function rd(){
-        history.push("/");
-    }
+    
     return(
-        <div>
+        <div className="landingPage-body">
             ExtraLandingPage page
-            <button onClick={rd}>home</button>
         </div>
     );
 }

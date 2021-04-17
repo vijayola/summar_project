@@ -1,15 +1,18 @@
 import React from 'react';
-import {useHistory} from 'react-router-dom';
+import './css/LandingPage.css';
 
-function LandingPage(){
-    const history = useHistory();
-    function rd(){
-        history.push("/");
-    }
-    return(
-        <div>
-            LandingPage page
-            <button onClick={rd}>home</button>
+function LandingPage() {
+
+    return (
+        <div className="header">
+            <div className="header-links">
+                <a className="header-path" href="/">Home</a>
+                <a className="header-path" href="/ranks">Ranks</a>
+                <a className="header-path" href="/participate">Participate</a>
+                <a className="header-path" href="/performance">Performance</a>
+                <a className="header-path" href="/support">Support us</a>
+                <a className="header-path" href="/about">About</a>
+            </div>
         </div>
     );
 }
